@@ -1,0 +1,46 @@
+.boxInputText{
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+}
+
+
+.inputText{
+    height: 41px;
+    width: 100%;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #000000;
+    padding: 0px 16px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.inputText:hover{
+    /* border-bottom: 4px solid #4a5c6a; */
+    border-bottom: 4px solid #77838d;
+    transition: 0.4s;
+}
+
+.inputText:focus{
+    border-bottom: 4px solid #77838d;
+    transition: 0.4s;
+}
+
+.text{
+    font-size: 18px;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.boxInputText .inputText:focus ~ .text, .boxInputText .inputText:valid ~ .text{
+    font-size: 12px;
+    top: -8px;
+    left: 20px;
+    transition: 0.4s;
+}

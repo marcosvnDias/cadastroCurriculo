@@ -1,0 +1,26 @@
+.boxTextarea{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputTextarea{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    background-color: #ccd0cf;
+    border: 2px solid black;
+    padding: 6px 8px;
+    outline: none;
+    transition: 0.4s;
+}
+
+.inputTextarea:hover{
+    border: 2px solid #77838d;
+    transition: 0.4s;
+}
+
+.inputTextarea:focus{
+    border: 2px solid #77838d;
+    transition: 0.4s;
+}
