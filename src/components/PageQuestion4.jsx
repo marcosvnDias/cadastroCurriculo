@@ -4,7 +4,7 @@ import InputText from './InputText'
 import Textarea from './Textarea'
 import { Link } from 'react-router-dom'
 
-export const PageQuestion2 = () => {
+export const PageQuestion4 = () => {
   const [exps, setExps] = useState(0);
   const [arrayExps, setArrayExps] = useState([{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }, { id: 6 }, { id: 7 }]);
   const [flag, setFlag] = useState(null);
@@ -29,10 +29,10 @@ export const PageQuestion2 = () => {
     }
 
     if(exps > 7){
-      alert("Vocẽ alcançou o número máximo de experiências");
+      alert("Vocẽ alcançou o número máximo de skills");
       return;
     }
-
+    
     const copyArrayExps = arrayExps.filter((exp) => exp.id <= exps);
     setArrayExps(copyArrayExps);
     setFlag(true);
@@ -47,7 +47,7 @@ export const PageQuestion2 = () => {
         <div className={styles.boxPageQuest}>
 
           <div>
-            <h2>Quantas experiências você quer cadastrar?</h2>
+            <h2>Quantas hard skills você quer cadastrar?</h2>
             <InputText event={handleChange} />
           </div>
 
@@ -61,31 +61,23 @@ export const PageQuestion2 = () => {
 
       {flag ? arrayExps.map((experience, index) => (
         <div className={styles.boxPageQuest} key={experience.id + index}>
-          <div className={styles.boxInputs1}>
-            <InputText text={"Ano de início"}/>
-            <InputText text={"Ano de termino"}/>
-          </div>
 
           <div className={styles.boxInputs2}>
-            <InputText text={"Profissão"}/>
-            <InputText text={"Empresa"}/>
+            <InputText text={"Skill"}/>
           </div>
 
-          <div className={styles.containerTextarea}>
-            <Textarea text={"Sobre a experiência:"} rowsText={4}/>
-          </div>
         </div>
       )) : null}
 
       {flag ?
         <div className={styles.boxPageQuestButton}>
           <div className={styles.boxButtonNext}>
-            <Link to={"/pageQuestion3"}>
+            <Link to={""}>
               <button className={styles.buttonNext}>Próximo</button>
             </Link>
           </div>
         </div>
-      : null}
+        : null}
 
     </div>
   )

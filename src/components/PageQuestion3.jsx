@@ -18,6 +18,21 @@ export const PageQuestion3 = () => {
   }
 
   function createPage() {
+    if(exps === "" || exps === 0){
+      alert("O campo está vázio");
+      return;
+    }
+
+    if(isNaN(exps)){
+      alert("O que vocẽ digitou não é um número");
+      return;
+    }
+
+    if(exps > 7){
+      alert("Vocẽ alcançou o número máximo de formações");
+      return;
+    }
+    
     const copyArrayExps = arrayExps.filter((exp) => exp.id <= exps);
     setArrayExps(copyArrayExps);
     setFlag(true);
@@ -61,7 +76,7 @@ export const PageQuestion3 = () => {
       {flag ?
         <div className={styles.boxPageQuestButton}>
           <div className={styles.boxButtonNext}>
-            <Link to={""}>
+            <Link to={"/pageQuestion4"}>
               <button className={styles.buttonNext}>Próximo</button>
             </Link>
           </div>

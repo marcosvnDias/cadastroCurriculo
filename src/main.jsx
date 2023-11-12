@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import {PageQuestion1} from './components/PageQuestion1.jsx'
 import { PageQuestion2 } from './components/PageQuestion2.jsx'
 import { PageQuestion3 } from './components/PageQuestion3.jsx'
+import { PageQuestion4 } from './components/PageQuestion4.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/pageQuestion3",
     element: <PageQuestion3/>
+  },
+  {
+    path: "/pageQuestion4",
+    element: <PageQuestion4/>
   }
 ])
 
