@@ -44,3 +44,9 @@
     left: 20px;
     transition: 0.4s;
 }
+
+.textAlert{
+    font-size: 11px;
+    color: rgb(194, 43, 43);
+    margin-top: 2px;
+}

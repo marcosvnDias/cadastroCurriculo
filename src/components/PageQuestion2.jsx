@@ -10,11 +10,11 @@ export const PageQuestion2 = () => {
   const [flag, setFlag] = useState(null);
 
   useEffect(() => {
-    console.log(exps)
+    console.log(exps);
   }, [exps])
 
   function handleChange(e) {
-    setExps(e.target.value)
+    setExps(e.target.value);
   }
 
   function createPage() {

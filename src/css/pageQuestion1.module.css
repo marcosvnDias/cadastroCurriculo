@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 26px 0px;
 }
 
 /* .boxPageQuest{
@@ -19,7 +20,20 @@
 } */
 
 .boxPageQuest{
-    height: 541px;
+    /* height: 551px; */
+    width: 568px;
+    background-color: #ccd0cf;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #000000cc;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 38px 41px;
+    gap: 32px;
+}
+
+/* .boxPageQuestAlert{
+    height: 586px;
     width: 568px;
     background-color: #ccd0cf;
     border-radius: 8px;
@@ -29,8 +43,7 @@
     flex-direction: column;
     align-items: start;
     gap: 32px;
-}
-
+} */
 
 .boxInputs1{
     display: flex;
