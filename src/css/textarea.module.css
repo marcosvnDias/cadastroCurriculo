@@ -24,3 +24,8 @@
     border: 2px solid #77838d;
     transition: 0.4s;
 }
+
+.textAlert{
+    font-size: 11px;
+    color: rgb(194, 43, 43);
+}

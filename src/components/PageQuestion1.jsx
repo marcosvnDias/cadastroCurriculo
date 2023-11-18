@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from "../css/pageQuestion1.module.css"
-import InputText from './InputText'
+
 import Textarea from './Textarea'
 import { Link } from 'react-router-dom'
+import InputText from './InputText'
 
 export const PageQuestion1 = () => {
   const [name, setName] = useState("");
@@ -15,7 +16,6 @@ export const PageQuestion1 = () => {
 
   function verification() {
     setFlagInput(true)
-
   }
 
   return (
@@ -38,7 +38,7 @@ export const PageQuestion1 = () => {
 
 
         <div className={styles.containerTextarea}>
-          <Textarea text={"Sobre você:"} rowsText={4} setValueInput={setAboutYou} />
+          <Textarea text={"Sobre você:"} rowsText={4} valueInput={aboutYou} setValueInput={setAboutYou} flagInput={flagInput} setFlagInput={setFlagInput} />
         </div>
 
         <div className={styles.boxButtonNext}>
