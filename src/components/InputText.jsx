@@ -40,8 +40,17 @@ const InputText = ({text, valueInput, setValueInput, flagInput, setFlagInput, id
       case "empresa":
         categDates.empresa[id - 1] = date;
         break;
+      case "inicioCurso":
+        categDates.inicioCurso[id - 1] = date;
+        break;
+      case "fimCurso":
+        categDates.fimCurso[id - 1] = date;
+        break;
+      case "nomeCurso":
+        categDates.nomeCurso[id - 1] = date;
+        break;
     }
-    // console.log(categDates)
+    console.log(categDates)
   }, [date])
   
   

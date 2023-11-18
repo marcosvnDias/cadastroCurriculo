@@ -43,7 +43,7 @@ export const PageQuestion1 = () => {
 
         <div className={styles.boxButtonNext}>
           {flagInput === false ?
-            <button className={styles.buttonNext} onClick={verification}>Próximo</button>
+            <button className={styles.buttonNext} onClick={verification}>Registrar</button>
             :
             <Link to={"/pageQuestion2"}>
               <button className={styles.buttonNext}>Próximo</button>
