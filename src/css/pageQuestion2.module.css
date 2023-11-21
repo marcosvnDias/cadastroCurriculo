@@ -40,6 +40,9 @@
     gap: 10px;
 }
 
+.text{
+    font-size: 1.5em;
+}
 
 .boxInputs1{
     display: flex;
@@ -120,3 +123,39 @@
       opacity: 1;
     }
   }
+
+
+@media (max-width: 600px){
+    .boxPageQuest {
+        width: 368px;
+    }
+
+    .text{
+        font-size: 1.18em;
+    }
+
+    .boxPageQuestButton{
+        width: 368px;
+    }
+}
+
+@media (max-width: 400px){
+    .boxPageQuest {
+        width: 268px;
+    }
+
+    .boxInputs1{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .text{
+        font-size: 1em;
+    }
+
+    .boxPageQuestButton{
+        width: 268px;
+    }
+}

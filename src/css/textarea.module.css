@@ -29,3 +29,16 @@
     font-size: 11px;
     color: rgb(194, 43, 43);
 }
+
+@media (max-width: 600px){
+    .inputTextarea{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px){
+    .inputTextarea{
+        font-size: 14px;
+        height: 90px;
+    }
+}

@@ -46,7 +46,7 @@ export const PageQuestion2 = () => {
 
           <div className={styles.boxFirstQuest}>
             <div>
-              <h2>Quantas formações você quer cadastrar?</h2>
+              <h2 className={styles.text}>Quantas formações você quer cadastrar?</h2>
               <InputText valueInput={exps} setValueInput={setExps} />
             </div>
 

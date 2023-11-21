@@ -4,11 +4,11 @@
     width: 100%;
 }
 
-
 .inputText{
     height: 41px;
     width: 100%;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.2em;
     background-color: transparent;
     border: none;
     border-bottom: 4px solid #000000;
@@ -29,7 +29,8 @@
 }
 
 .text{
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.125em;
     background-color: transparent;
     position: absolute;
     top: 10px;
@@ -39,7 +40,7 @@
 }
 
 .boxInputText .inputText:focus ~ .text, .boxInputText .inputText:valid ~ .text{
-    font-size: 12px;
+    font-size: 0.78em;
     top: -8px;
     left: 20px;
     transition: 0.4s;
@@ -49,4 +50,21 @@
     font-size: 11px;
     color: rgb(194, 43, 43);
     margin-top: 2px;
+}
+
+@media (max-width: 600px){
+    .inputText{
+        font-size: 0.92em;
+    }
+
+    .text{
+        font-size: 0.92em;
+        left: 12px;
+    }
+
+    .boxInputText .inputText:focus ~ .text, .boxInputText .inputText:valid ~ .text{
+        font-size: 0.68em;
+        top: -6px;
+        left: 14px;
+    }
 }
